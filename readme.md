@@ -24,7 +24,6 @@ spotter/
 ├── train.py                # Benchmarking, model training, and artifact persistence script
 ├── predict.py              # Production inference script (generates submission CSVs)
 ├── score.py                # Spotter's official acceptance test and chart generator
-├── report_draft.md         # Final written report draft for PDF/DOCX submission
 ├── requirements.txt        # Pinned project dependencies
 └── .gitignore              # Ignores .venv, cache files, and local binaries
 ```
@@ -113,7 +112,7 @@ Evaluated on the unseen September–October 2025 out-of-time validation fold:
 ## 5. Submission Deliverables Summary
 
 * [x] **`validation_predictions.csv`:** Exactly 12,000 positive rate predictions (`load_id,predicted_rate`) for evaluation loads `TE-000001` through `TE-012000`.
-* [x] **Technical Report (PDF/DOCX):** 1–2 page assessment report detailing data validation, chronological splitting strategy, and the December forecast chart (markdown source in `report_draft.md`).
+* [x] **Technical Report (PDF/DOCX):** 1–2 page assessment report detailing data validation, chronological splitting strategy, and the December forecast chart.
 * [x] **December Rate Forecast:** Completed `december-chart-inputs.csv` verified by `score.py`, producing the December 2025 predicted rate curve.
 * [x] **Production Pipeline & Reproduction:** Modular source code in `src/`, pinned `requirements.txt`, and end-to-end automated scripts (`train.py`, `predict.py`, `score.py`).
-* [x] **Loom Video Walkthrough:** [Link to Loom Video](https://www.loom.com/share/your-link-here) *(2–3 min walkthrough of EDA anomalies, split strategy, model choice, and code)*.
+* [x] **Loom Video Walkthrough:** [Watch Loom Walkthrough (2–3 min)](https://www.loom.com/share/30089176985846f4976485981bd7eeda) *(covers EDA findings, data-quality fixes, validation split, model choice, and code walkthrough)*.

@@ -1,7 +1,6 @@
 """
-Inference & Submission Pipeline
-Loads production model, generates predictions for validation and December inputs,
-and verifies output compliance against score.py specifications.
+Inference & Submission Pipeline (Phase 4)
+Loads production model, generates predictions for validation and December inputs
 """
 
 from __future__ import annotations
@@ -19,7 +18,7 @@ def generate_predictions(
     dec_output_path: str = "december-chart-inputs.csv",
 ) -> None:
     print("=" * 70)
-    print("SPOTTER FREIGHT RATE PREDICTION - INFERENCE PIPELINE")
+    print("SPOTTER FREIGHT RATE PREDICTION - INFERENCE PIPELINE (PHASE 4)")
     print("=" * 70)
 
     # 1. Load Serialized Pipeline
